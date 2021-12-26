@@ -145,3 +145,65 @@ for i in ${!Array1[@]}; do
   echo "${Array1[$i]}"
 done
 ```
+
+## Loops
+
+```bash
+#!/bin/bash
+echo '== for ... in =='
+
+for i in 59 68 98 11; do
+  echo $i
+done
+
+echo '== for ... in =='
+
+array1=(2 34 45 32)
+for i in ${!array1[@]}; do
+  echo "${array1[$i]}"
+done
+
+echo '== for (()) =='
+
+for((i=0; i<10; ++i)); do
+  echo $i
+done
+
+echo '== While =='
+
+n=1
+while [ $n -lt 4 ]; do
+  echo "$n"
+  n=$(( $n+1 ))
+done
+```
+
+## Functions
+
+```bash
+#!/bin/bash
+list_files(){
+  echo "Files ..."
+  cd ~/Dev/bash-learning
+  ls;
+}
+
+list_files
+```
+
+## Recursive
+
+```bash
+example(){
+  echo "2 + 2 = ?"
+  read answer
+  if [[ $answer == 4 ]]; then
+    echo "Ok!"
+  else
+    echo "Error"
+    echo
+    example
+  fi
+}
+example
+```
