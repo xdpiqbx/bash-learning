@@ -21,3 +21,5 @@ alt + c - forvard for 1 word
 alt + b - back for 1 word
 alt + d - del word forvard
 alt + backspace - del word back
+
+https://youtu.be/TPRSJbtfK4M?t=3682
