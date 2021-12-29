@@ -1,4 +1,5 @@
 /* styling */
+/* random comment */
 require('styles/main.scss');
 /* js */
 import { log, logTitle } from 'logger';
