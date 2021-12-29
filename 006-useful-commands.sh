@@ -5,5 +5,9 @@ history | grep "grep"
 cat query.sql | grep "id"
 
 # when input !! and pres space you will get prev command 
+# when input sudo !! and pres space you will get sudo + prev command
 
-rep "id" # command not found https://youtu.be/TPRSJbtfK4M?t=5810
+cat query.sql | rep "select" # zsh: command not found: rep
+^rep^grep # it replace in last command and print it
+
+# ctrl + r - type and find and ctrl + r fo move forward
