@@ -11,11 +11,20 @@ curl -O https://raw.githubusercontent.com/amigoscode/javascript/master/app/examp
 :q! # quit from vim
 
 # ----------------------------------- Navigation
-    ▲
-    K
-◄ H   L ►
-    J
-    ▼
+
+           gg
+            ▲
+            K
+0 ^ b   ◄ H   L ►   w $ 
+            J
+            ▼
+            G
+
+#     ▲
+#     K
+# ◄ H   L ►
+#     J
+#     ▼
 
 # gg - go to beginning of the file
 # 0 - beginning of the line
@@ -30,4 +39,18 @@ curl -O https://raw.githubusercontent.com/amigoscode/javascript/master/app/examp
 
 # 41 gg - (number of line gg) jump to specific line
 
+# ----------------------------------- Insert mode
+
 # i - goto insertt mode https://youtu.be/TPRSJbtfK4M?t=7196
+# esc - return to command mode
+
+# i - insert directly where cusor
+# a - append after cusor (from next symbol)
+# o - insert mode after current line (from next line)
+# O - insert mode before current line (from prev line)
+# A - insert in the end of line (append to line)
+
+# u - like ctrl+z
+# uu - undo all
+
+# ctrl + r - redo
