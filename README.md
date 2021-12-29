@@ -23,3 +23,7 @@ alt + d - del word forward
 alt + backspace - del word back
 
 https://youtu.be/TPRSJbtfK4M?t=3682
+
+---
+
+## [The Ultimate vimrc](https://github.com/amix/vimrc)

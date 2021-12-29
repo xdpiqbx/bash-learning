@@ -1,0 +1,2 @@
+export config = {};
+export default = {};
