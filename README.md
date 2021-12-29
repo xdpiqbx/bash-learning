@@ -17,9 +17,9 @@ https://youtu.be/TPRSJbtfK4M?t=1476
 
 ctrl + a - move to begin of line
 ctrl + e - move to the ent of line
-alt + c - forvard for 1 word
+alt + c - forward for 1 word
 alt + b - back for 1 word
-alt + d - del word forvard
+alt + d - del word forward
 alt + backspace - del word back
 
 https://youtu.be/TPRSJbtfK4M?t=3682
