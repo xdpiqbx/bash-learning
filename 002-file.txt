@@ -1,0 +1,2 @@
+this str will rewrite all file
+Some str for file-))

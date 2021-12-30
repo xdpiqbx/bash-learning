@@ -27,6 +27,105 @@
 
 ---
 
+## 1-Hello Bash Scripting
+
+`001-helloScript.sh`
+
+```bash
+touch 001-helloScript.sh
+chmod +x 001-helloScript.sh # it makes file executable
+```
+
+```bash
+#! /bin/bash
+echo 'Another one Hello World, linuxhint'
+```
+
+---
+
+## 2-Redirect to file
+
+```sh
+#! /bin/bash
+echo '> - will create file and write this string' > 002-file.txt
+echo '>> - will append to file' >> 002-file.txt
+echo 'this str will rewrite all file' > 002-file.txt
+
+# here you will write something else to file from term then press ctrl+d
+cat >> 002-file.txt
+```
+
+---
+
+## 3-Comments and heredoc
+
+```sh
+#! /bin/bash
+echo 'start'
+
+# one line comments
+
+: '
+multi line
+comment
+comment
+comment
+'
+
+cat << heredoc
+doc line 1
+doc line 1
+doc line 1
+doc line 1
+heredoc
+
+echo 'end'
+```
+
+---
+
+## 4-Conditional Statements
+
+```bash
+: '
+[[ -z STRING ]]	Empty string
+[[ -n STRING ]]	Not empty string
+[[ STRING == STRING ]]	Equal
+[[ STRING != STRING ]]	Not Equal
+[[ NUM -eq NUM ]]	Equal
+[[ NUM -ne NUM ]]	Not equal
+[[ NUM -lt NUM ]]	Less than
+[[ NUM -le NUM ]]	Less than or equal
+[[ NUM -gt NUM ]]	Greater than
+[[ NUM -ge NUM ]]	Greater than or equal
+[[ STRING =~ STRING ]]	Regexp
+(( NUM < NUM ))	Numeric conditions
+[[ -o noclobber ]]	If OPTIONNAME is enabled
+[[ ! EXPR ]]	Not
+[[ X && Y ]]	And
+[[ X || Y ]]	Or
+
+File conditions
+[[ -e FILE ]]	Exists
+[[ -r FILE ]]	Readable
+[[ -h FILE ]]	Symlink
+[[ -d FILE ]]	Directory
+[[ -w FILE ]]	Writable
+[[ -s FILE ]]	Size is > 0 bytes
+[[ -f FILE ]]	File
+[[ -x FILE ]]	Executable
+[[ FILE1 -nt FILE2 ]]	1 is more recent than 2
+[[ FILE1 -ot FILE2 ]]	2 is more recent than 1
+[[ FILE1 -ef FILE2 ]]	Same files
+'
+```
+
+---
+
+[contine](https://youtu.be/e7BufAVwDiM?t=1806)
+
+---
+
 ## Hello World
 
 ```bash
