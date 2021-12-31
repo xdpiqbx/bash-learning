@@ -1,0 +1,33 @@
+total 56
+drwxrwxr-x 3 max max 4096 гру 31 19:26 .
+drwxrwxr-x 5 max max 4096 гру 30 14:43 ..
+-rw-rw-r-- 1 max max  137 гру 30 19:12 000-start.sh
+-rwxrwxr-x 1 max max   84 гру 30 19:14 001-helloScript.sh
+-rw-rw-r-- 1 max max   52 гру 30 19:26 002-file.txt
+-rwxrwxr-x 1 max max  272 гру 30 19:27 002-redirect-to-file.sh
+-rwxrwxr-x 1 max max  169 гру 30 19:50 003-comments.sh
+-rwxrwxr-x 1 max max 1879 гру 30 23:05 004-conditional-statements.sh
+-rwxrwxr-x 1 max max  504 гру 31 14:14 005-loop.sh
+-rwxrwxr-x 1 max max  325 гру 31 14:51 006-script-input.sh
+-rw-rw-r-- 1 max max    0 гру 31 19:26 007-file.txt
+-rw-rw-r-- 1 max max    0 гру 31 19:16 007-script-output.sh
+drwxrwxr-x 8 max max 4096 гру 30 23:10 .git
+-rwxrwxr-x 1 max max  687 гру 31 19:26 main.sh
+-rw-rw-r-- 1 max max 6018 гру 31 14:15 README.md
+ls: cannot access '+al': No such file or directory
+total 60
+drwxrwxr-x 3 max max 4096 гру 31 19:26 .
+drwxrwxr-x 5 max max 4096 гру 30 14:43 ..
+-rw-rw-r-- 1 max max  137 гру 30 19:12 000-start.sh
+-rwxrwxr-x 1 max max   84 гру 30 19:14 001-helloScript.sh
+-rw-rw-r-- 1 max max   52 гру 30 19:26 002-file.txt
+-rwxrwxr-x 1 max max  272 гру 30 19:27 002-redirect-to-file.sh
+-rwxrwxr-x 1 max max  169 гру 30 19:50 003-comments.sh
+-rwxrwxr-x 1 max max 1879 гру 30 23:05 004-conditional-statements.sh
+-rwxrwxr-x 1 max max  504 гру 31 14:14 005-loop.sh
+-rwxrwxr-x 1 max max  325 гру 31 14:51 006-script-input.sh
+-rw-rw-r-- 1 max max  899 гру 31 19:26 007-file.txt
+-rw-rw-r-- 1 max max    0 гру 31 19:16 007-script-output.sh
+drwxrwxr-x 8 max max 4096 гру 30 23:10 .git
+-rwxrwxr-x 1 max max  688 гру 31 19:26 main.sh
+-rw-rw-r-- 1 max max 6018 гру 31 14:15 README.md

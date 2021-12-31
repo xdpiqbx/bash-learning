@@ -8,7 +8,7 @@
 5-Loops
 6-Script input
 7-Script output
-8-how to send output from one script to another scrpt
+8-how to send output from one script to another script
 9-String Processing
 10-Numbers and Arithmetic
 11-Declare Command
@@ -122,7 +122,199 @@ File conditions
 
 ---
 
-[contine](https://youtu.be/e7BufAVwDiM?t=1806)
+## 5-Loops
+
+```bash
+# WHILE loop will run until condition false
+number=1
+while [ $number -le 10 ]; do
+  echo $number
+  number=$(( $number+1 ))
+done
+
+
+# UNTIL loop will run until condition false
+number=1
+until [ $number -ge 10 ]; do
+  echo $number
+  number=$(( $number+1 ))
+done
+
+# FOR loop
+for i in 1 2 3 4 5; do
+  echo $i
+done
+
+for i in {0..20}; do
+  echo $i
+done
+
+for i in {0..20..2}; do
+  echo $i
+done
+
+for (( i = 0; i < 5; i++ )); do
+  echo $i
+done
+
+# Do not forgot about `beak` and `continue` stmnts
+```
+
+---
+
+## 6-Script input
+
+```bash
+#! /bin/bash
+# chmod +x ./006
+# command line params
+echo $0 $1 $2 $3
+
+echo "-========-"
+
+args=("$@")
+# echo ${args[0]} ${args[1]} ${args[2]}
+echo $@
+echo $# # arr length
+
+echo "-========-"
+
+# Next script will read file line by line
+while read line; do
+  echo $line
+done < ${1:-/dev/stdin}
+
+# ./006-script-input.sh ./index.sh
+
+```
+
+## 7-Script output
+
+```bash
+# file 1 for output
+# file 2 for output errors
+ls -al 1>007-file-1-ok.txt 2>007-file-2-error.txt
+
+# all error you will see in terminal
+ls -al > 007-file-1-ok.txt
+
+# all output and errors to one file
+ls -al > 007-file.txt 2>&1
+```
+
+---
+
+## 8-how to send output from one script to another script
+
+```bash
+# https://youtu.be/e7BufAVwDiM?t=3754
+
+###### main.sh
+NAME="Name from main.sh -> John"
+export NAME
+./008-test.sh
+
+###### 008-test.sh
+echo "Message from 008-test.sh. $NAME"
+
+# -> ./main.sh
+# Message from 008-test.sh. Name from main.sh -> John
+```
+
+---
+
+## 9-String Processing
+
+```bash
+### matching by content
+echo "Enter 1st string"
+read st1
+
+echo "Enter 2nd string"
+read st2
+
+if [ $st1 == $st2 ]; then
+  echo "is Match"
+else
+  echo "is NOT match"
+fi
+
+### matching by length
+echo "Enter 1st string"
+read st1
+
+echo "Enter 2nd string"
+read st2
+
+if [ $st1 \< $st2 ]; then
+  echo "$st1 is smaller then $st2"
+elif [ $st1 \> $st2 ]
+  echo "$st2 is smaller then $st1"
+else
+  echo "strings are eqal length"
+fi
+
+### concatenation
+echo "Enter 1st string"
+read st1
+
+echo "Enter 2nd string"
+read st2
+
+concatenated=$st1$st2
+
+echo $concatenated
+
+# UPPER lower case
+echo 'UPPER lower case'
+echo ${st1^} # first letter to upper ignore other
+echo ${st2^^} # all letters to upper case
+```
+
+---
+
+## 10-Numbers and Arithmetic
+
+```bash
+echo 31+21 # print -> 31+21
+echo $((31 + 21)) # print 52
+
+n1=31
+n2=21
+
+echo $(($n1 + $n2))
+echo $(($n1 - $n2))
+echo $(($n1 * $n2))
+echo $(($n1 / $n2))
+echo $(($n1 % $n2))
+
+echo $(expr $n1 + $n2)
+echo $(expr $n1 - $n2)
+echo $(expr $n1 \* $n2)
+echo $(expr $n1 / $n2)
+echo $(expr $n1 % $n2)
+
+## HEX convert
+
+echo "Enter HEX"
+read hex
+
+echo -n "Dec val of $hex is : "
+
+echo "obase=10; ibase=16; $hex" | bc
+```
+
+---
+
+## 11-Declare Command
+
+```bash
+
+```
+
+---
+
+[contine](https://youtu.be/e7BufAVwDiM?t=4999)
 
 ---
 

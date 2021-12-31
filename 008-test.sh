@@ -1,0 +1,1 @@
+echo "Message from 008-test.sh. $NAME"
